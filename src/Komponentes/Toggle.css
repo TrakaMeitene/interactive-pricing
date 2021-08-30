@@ -1,0 +1,62 @@
+
+.toggle{
+    position:absolute;
+    width:50px;
+    height: 25px;
+    border-radius:20px;
+    background-color:hsl(223, 50%, 87%);
+}
+.ball{
+    width:18px;
+    height:18px;
+    background-color: hsl(0, 0%, 99%);
+    border-radius:50%;
+    position:relative;
+    transform:translate(15%, 15%);
+    cursor: pointer;
+}
+
+.toggle::before{
+    content:"Monthly Billing";
+    position:absolute;
+    left:-200%;
+}
+.toggle::after{
+    content:"Annually Billing";
+    position:absolute;
+    right:-200%;
+}
+
+.toggle::before, .toggle::after{
+    color:hsl(225, 20%, 60%);
+    top:-10%;
+    font-size:13px;
+}
+.flex{
+    display:flex;
+    width:500px;
+    height:100px;
+    justify-content:center;
+    align-items:center;
+}
+
+.color{
+    background-color: hsl(174, 77%, 80%);
+}
+
+.show{
+    transform:translate(160%, 15%);
+    }
+
+.discount{
+    border-radius:20px;
+    text-align: center;
+    margin:auto;
+    width:85px;
+    height:17.5px;
+    background-color:hsl(14, 92%, 95%);
+    color:hsl(15, 100%, 70%);
+    font-size: 8.5px;
+    position:relative;
+    right:-35%;
+}

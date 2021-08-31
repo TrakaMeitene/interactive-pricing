@@ -55,7 +55,7 @@ setValue(event.target.value);
         />
 
         </div>
-        <Toggle />
+        <Toggle dati={DUMMY[0].value}/>
         <Saraksts/>
       </div>
     

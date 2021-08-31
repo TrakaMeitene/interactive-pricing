@@ -36,7 +36,7 @@ setValue(event.target.value);
       <div className="Logs">
         <div className="teksti">
           <p className="views"><span id="amount">{enteredRange}</span>K PAGEVIEWS</p>
-          <p><span className="amount" id="summ" >${value}.00</span>/month</p>
+          <p><span className="amount" id="summ" >${props.value}.00</span>/month</p>
         </div>
         <div className="slider">
         <input 

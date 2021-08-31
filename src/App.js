@@ -3,7 +3,11 @@ import Logs from './Komponentes/Logs';
 
 function App() {
     
+const DUMMY = [
 
+  {value: 10},
+ {value:100},
+];
 
   return (
     <div>
@@ -12,7 +16,7 @@ function App() {
           <h1>Simple, traffic-based pricing</h1>
           <p>Sign-up for our 30-day trial.No cedit card required.</p>
         </div>
-        <Logs />
+        <Logs dati={DUMMY[0].value}/>
       </div>
       
     </div>

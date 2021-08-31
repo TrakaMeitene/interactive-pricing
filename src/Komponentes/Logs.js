@@ -3,15 +3,6 @@ import "./Logs.css";
 import Toggle from "./Toggle.js";
 import Saraksts from './Saraksts.js';
 
-//const DUMMY = [
-
- // {
-//value: 10,
-  //},
- // {
-  //  value:100,
- // },
-//];
 
 function Logs() {
   const [enteredRange, setEnteredRange] = useState('10');
@@ -36,7 +27,7 @@ setValue(event.target.value);
       <div className="Logs">
         <div className="teksti">
           <p className="views"><span id="amount">{enteredRange}</span>K PAGEVIEWS</p>
-          <p><span className="amount" id="summ" >${props.value}.00</span>/month</p>
+          <p><span className="amount" id="summ" >${value}.00</span>/month</p>
         </div>
         <div className="slider">
         <input 
@@ -55,7 +46,7 @@ setValue(event.target.value);
         />
 
         </div>
-        <Toggle dati={DUMMY[0].value}/>
+        <Toggle />
         <Saraksts/>
       </div>
     

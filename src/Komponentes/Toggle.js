@@ -8,7 +8,7 @@ function Toggle() {
           return(
            document.getElementById('ball1').classList.toggle('show'),
           document.getElementById('toggle1').classList.toggle('color'),
-           document.getElementById('summ').innerHTML = (25 * {props.value}) / 100
+           document.getElementById('summ').innerHTML = (25 * {value}) / 100
           // setDiscount((25 * 0)/100)
           );
 
